@@ -1,0 +1,28 @@
+.pano {
+  width: 1000px;
+  height: 500px;
+
+}
+
+
+
+.tooltip {
+
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+
+  opacity: 0;
+  transform: translate3d(-30%, -100%, 0);
+  transition: opacity 0.3s, transform .3s;
+}
+
+
+.is-active {
+  opacity: 1;
+  transform: translate3d(-50%, calc(-100%-20px), 0);
+}
